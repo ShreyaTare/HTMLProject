@@ -116,7 +116,7 @@
         }
 
         #appetizerlist {
-            color: maroon;
+            color: whitesmoke;
             font-size: 20px;
             font-weight: bold;
             list-style-type: none;
@@ -127,6 +127,55 @@
         #appetizerlist li {
             margin-bottom: 10px;
         }
+
+        .menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.menus ul {
+  margin-bottom: 10px;
+}
+
+.menus h3 {
+  margin: 0;
+  font-size: 24px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff7f50;
+  text-shadow: 2px 2px #ccc;
+}
+
+.menus ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menus ol li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+  text-shadow: 1px 1px #f9f9f9;
+}
+
+.menus ol li:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 
         .aboutus-img {
             float: right;
@@ -252,20 +301,48 @@
         <section>
             <h2><a name="menu">Our Menu</a></h2>
             <p class="view">View our delicious menu items!</p>
-            <ul>
+            <div class="menus">
+                <ul>
                 <li>
                     <h3>Appetizers</h3>
                 </li>
             </ul>
             <ol id="appetizerlist">
-                <li id="bruschetta"><a href="#appetizerinfo">Bruschetta</a></li>
-                <li id="spinach-artichoke-dip"><a href="#appetizerinfo">Spinach Artichoke Dip</a></li>
-                <li id="canape"><a href="#appetizerinfo">Canapé</a></li>
-                <li id="caprese-skewers"><a href="#appetizerinfo">Caprese Skewers</a></li>
+                <li>Bruschetta</a></li>
+                <li>Spinach Artichoke Dip</a></li>
+                <li>Canapé</a></li>
+                <li>>Caprese Skewers</a></li>
                 <li>Entrees</li>
                 <li>Desserts</li>
             </ol>
-
+        </div>
+            <div class="menus" >
+                <ul>
+                <li>
+                <h3>Drinks</h3>
+                </li></ul>
+                <ol id="appetizerlist">
+                  <li>Coca-Cola</li>
+                  <li>Sprite</li>
+                  <li>Lemonade</li>
+                  <li>Iced Tea</li>
+                  <li>Mineral Water</li>
+                </ol>
+              </div>
+              
+              <div class="menus"><ul>
+                <li>
+                <h3>Main Platter</h3>
+            </li></ul>
+                <ol id="appetizerlist">
+                  <li>Steak</li>
+                  <li>Salmon</li>
+                  <li>Chicken Alfredo</li>
+                  <li>Vegetable Stir-Fry</li>
+                  <li>Spaghetti Bolognese</li>
+                </ol>
+              </div>
+              
 
         </section>
 
@@ -316,8 +393,10 @@
           <label for="quantity">Quantity:</label>
           <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
           <br>
-          <label for="comments">Comments:</label>
-         
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br>
+        
+          <button type="submit" name="order">Order</button>
         </form>
 
     <footer>

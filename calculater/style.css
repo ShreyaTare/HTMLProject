@@ -2,45 +2,61 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 50px;
+	justify-content: center;
+	height:700px;
+	background-color: whitesmoke;
 }
 
 .display {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	align-items: center;
+	width: 300px;
+	height: 80px;
+	
 	margin-bottom: 20px;
 }
 
 #result {
-	width: 250px;
-	height: 30px;
-	font-size: 24px;
+	width: 280px;
+	height: 60px;
+	font-size: 36px;
+	
+	background-color: lightgrey;
+	border: none;
+	padding: 10px;
 	text-align: right;
 }
 
 .keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	padding: 10px;
+    width: 500px;
+    height: 250px;
+}
+
+.button {
 	display: flex;
-	flex-wrap: wrap;
-    display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	background-color: grey;
+    font-size: 24px;
+	color: white;
+	transition: background-color 0.3s ease;
+    
 }
 
-button {
-	width: 50px;
-	height: 50px;
-	font-size: 24px;
-	margin: 5px;
-	background-color: #eee;
-	border: none;
-	cursor: pointer;
-}
-
-.keys button{
-
-}
-button:hover {
-	background-color: #ddd;
-}
-
-button:active {
+.button:hover {
 	background-color: #ccc;
+}
+
+
+
+@media (max-width: 400px) {
+	.keys {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
