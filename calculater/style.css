@@ -3,8 +3,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height:700px;
+	height: 400px;
+	width: 350px;
 	background-color: whitesmoke;
+	border: 1px solid black;
+	margin: auto;
 }
 
 .display {
@@ -13,8 +16,8 @@
 	align-items: center;
 	width: 300px;
 	height: 80px;
-	
-	margin-bottom: 20px;
+	border: 1px solid black;
+	margin-bottom: 10px;
 }
 
 #result {
@@ -33,7 +36,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 10px;
 	padding: 10px;
-    width: 500px;
+    width: 250px;
     height: 250px;
 }
 
