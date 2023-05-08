@@ -50,6 +50,22 @@
     margin-bottom: 30px;
 }
 
+/* Style the mission section */
+#mission {
+  padding: 50px;
+}
+
+#mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#mission p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
   
   nav {
     display: flex;
@@ -79,21 +95,7 @@
   }
   
 
-  /* Style the mission section */
-  #mission {
-    padding: 50px;
-  }
   
-  #mission h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  #mission p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
 
   /*gallary like content heading as tea of the month*/
   .tea-month h2{
@@ -112,68 +114,128 @@
     margin:0px 50px 50px 100px;
    
   }
-  /* gallary content container */
 
-  .image-container {
-    display: grid;
-    width: 1000px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 200px;
-    grid-gap: 10px;
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 100px;
-  }
 
-  .image-container img{
-    width:300px;
-    height: 200px;
-    gap: 20px;
-  }
+  /* Featured Tea section */
 
-  .image-container .image-container2{
-    gap:30px;
-  }
-  
-  .image-container2 {
-    display: grid;
-    width: 1000px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px;
-    grid-gap: 10px;
-    margin-top: 10px;
-    margin-left: 300px;
-    margin-right: 50px;
-  }
-
-  .image-container2 img{
-    width:300px;
-    height: 200px;
-    gap: 20px;
-  }
-  
-  
-  .item {
-    position: relative;
-    display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 10px;
+#featured {
+  margin-top: 500px;
+  width: 1000px;
+  color:white;
   text-align: center;
-  }
+  font-size:bold;
+  margin-bottom: 20px;
+}
+
+.featured-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 500px 100px 50px 250px;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item h4 {
+  margin-top: 10px;
+}
+
   
-  .item p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    margin-top: 500px;
-    text-align: center;
-    font-weight: bold;
-    gap:10px;
-    color: white;
-  }
+  /* Locations */
+
+#locations {
+  background-image: url('../images/location.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 570px;
+  width: 1200px;
+  color: white;
+}
+
+.our-locations {
+  display: flex;
+  gap: 40px;
+}
+
+.location {
+  width: 300px;
+  height: 300px;
   
-  
-  
- 
+  opacity: 1;
+  color:white;
+  background-color: #000;
+  border-radius: 5px;
+  transition: transform .2s;
+  text-align: center;
+}
+
+.location:hover {
+  transform: scale(1.1);
+}
+
+#locations h2 {
+  margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact h2,
+.contact h5 {
+  margin: 0;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+/* Footer */
+
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.contact h2,
+.contact h5 {
+  margin: 0;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+}
